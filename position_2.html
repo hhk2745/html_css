@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position</title>
+  <style>
+    #parent, #other, #grand{
+      border: 5px solid tomato;
+    }
+    #grand{
+      position: relative;
+    }
+    #parent{
+/*      position: relative;*/
+    }
+    #me{
+      background-color: black;
+      color: white;
+      /* absolute - html을 기준으로 위치함 (left or top 값이 있을 때) */
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="other">
+    other
+  </div>
+  <!-- 
+  부모 element의 position이 static이 아니라 relative일 때는 
+  가장 인접한 부모 element를 기준으로 top, left 위치를 잡게 됨
+  -->
+  <div id="grand">
+   grand
+    <div id="parent">
+      parent
+      <div id="me">me</div>
+    </div>
+  </div>
+</body>
+
+</html>

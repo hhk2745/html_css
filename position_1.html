@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position</title>
+  <style>
+    html {border: 1px solid gray;}
+    div {
+      border: 5px solid tomato;
+      margin: 10px;
+    }
+    #me{
+      /* offset */
+      position: relative;
+      /* 우선순위 높음 */
+      top: 100px;
+      left: 100px;
+      /* 우선순위 낮음 */
+      /* right: 100px; */
+      /* bottom: 100px; */
+    }
+  /* static  
+      top, left, right, bottom 와 상관없이 dom 구조를 따름
+     relative
+      dom 구조를 기본으로 잡고 top, left, right, bottom 에 따라 위치함
+     div -> default position: static
+    */
+  </style>
+</head>
+
+<body>
+  <div id="other">
+    other
+  </div>
+  <div id="parent">
+    parent
+    <div id="me">
+      me
+    </div>
+    <div>
+      in other
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>holyGrailLayout</title>
+  <style>
+    html{
+      height: 100%;
+/*      width: 100%;*/
+    }
+    body{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      border: 1px solid gray;
+    }
+    header{
+      border: 1px solid gray;
+      padding-left: 20px;
+    }
+    footer{
+      border-top: 1px solid gray;
+      padding-left: 20px;
+      text-align: center;
+    }
+    .content{
+      display: flex;
+    }
+    .content nav{
+      border-right: 1px solid gray;
+    }
+    .content aside{
+      border-left: 1px solid gray;
+    }
+    nav, aside{
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    main{
+      padding: 10px;
+    }
+    nav{
+/*      order: -1;*/
+    }
+    main{
+/*      order: 1;*/
+    }
+    aside{
+/*      order: -1;*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>H1 Header</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </nav>
+      <main>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus ab, eveniet atque iure consequuntur eaque voluptatum fuga ipsa, minus eos. Animi quae repellendus accusamus necessitatibus cum veniam, veritatis maiores.</div>
+        <div>Ullam, qui unde officia rerum doloribus adipisci voluptatibus inventore soluta veniam quos. Maxime minus deserunt dolor eligendi blanditiis modi doloribus hic, enim impedit! Corporis fugiat, nostrum quam aspernatur incidunt similique.</div>
+        <div>Repellendus perspiciatis magni quod totam quo nostrum ullam, fuga sint et atque esse assumenda. Similique maxime officiis ea incidunt praesentium est adipisci quo rem blanditiis, perferendis aliquam! Maiores, impedit pariatur.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus ab, eveniet atque iure consequuntur eaque voluptatum fuga ipsa, minus eos. Animi quae repellendus accusamus necessitatibus cum veniam, veritatis maiores.</div>
+        <div>Ullam, qui unde officia rerum doloribus adipisci voluptatibus inventore soluta veniam quos. Maxime minus deserunt dolor eligendi blanditiis modi doloribus hic, enim impedit! Corporis fugiat, nostrum quam aspernatur incidunt similique.</div>
+        <div>Repellendus perspiciatis magni quod totam quo nostrum ullam, fuga sint et atque esse assumenda. Similique maxime officiis ea incidunt praesentium est adipisci quo rem blanditiis, perferendis aliquam! Maiores, impedit pariatur.</div>
+      </main>
+      <aside>
+        AD
+      </aside>
+    </section>
+    <footer>
+      <a href="https://tutorials.org">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
